@@ -6,13 +6,16 @@ A full-stack AI-powered job application tracker built with Flask (backend) and R
 
 ## Features
 
-- **Job Tracker** — Add, update, delete and search job applications
-- **Resume Matcher** — Match your skills against a job and get a match score
-- **Resume Upload** — Upload a PDF resume and analyze it against a job description
-- **Job Scraper** — Scrape real jobs from the web automatically
-- **API Job Fetcher** — Fetch jobs from RemoteOK API
-- **Job Recommendations** — Get ranked job recommendations based on your skills
-- **Dashboard** — Visual overview of your application status with progress bars
+- **🔐 User Authentication** — Secure registration, login, and session management with password hashing
+- **📱 Responsive Design** — Mobile-first UI that works seamlessly on phones, tablets, and desktops
+- **📋 Job Tracker** — Add, update, delete and search job applications
+- **🎯 Resume Matcher** — Match your skills against a job and get a match score
+- **📤 Resume Upload** — Upload a PDF resume and analyze it against a job description
+- **🕷️ Job Scraper** — Scrape real jobs from the web automatically
+- **🔗 API Job Fetcher** — Fetch jobs from RemoteOK API
+- **🤖 Job Recommendations** — Get ranked job recommendations based on your skills using AI similarity matching
+- **📊 Dashboard** — Visual overview of your application status with progress bars
+- **☰ Mobile Sidebar** — Hamburger menu for easy navigation on mobile devices
 
 ---
 
@@ -21,20 +24,22 @@ A full-stack AI-powered job application tracker built with Flask (backend) and R
 ### Backend
 - Python 3.x
 - Flask
+- Flask-Login (Authentication)
+- Flask-CORS
 - SQLAlchemy
 - SQLite
 - spaCy (NLP)
 - BeautifulSoup4 (scraping)
 - PyPDF2 (resume parsing)
-- Selenium (autofill)
-- Flask-CORS
+- Werkzeug (security)
 
 ### Frontend
-- React 18
+- React 19
 - Vite
-- Tailwind CSS
-- React Router
+- Tailwind CSS 4
+- React Router 7
 - Axios
+- Responsive Design (Mobile-first)
 
 ---
 
@@ -153,8 +158,10 @@ FLASK_DEBUG=true
 
 ## API Endpoints
 
-| Method | Endpoint | Description |
-|--------|----------|-------------|
+| POST | `/api/auth/register` | Register a new user |
+| POST | `/api/auth/login` | Login user |
+| POST | `/api/auth/logout` | Logout user |
+| GET | `/api/auth/me` | Get current user |
 | GET | `/jobs` | Get all jobs |
 | POST | `/jobs` | Add a new job |
 | PUT | `/jobs/<id>` | Update a job |
@@ -166,7 +173,6 @@ FLASK_DEBUG=true
 | POST | `/match` | Match resume to job |
 | POST | `/upload` | Upload PDF resume |
 | POST | `/recommend` | Get job recommendations |
-| POST | `/register` | Register a user |
 
 ---
 
