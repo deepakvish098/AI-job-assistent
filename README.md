@@ -6,7 +6,7 @@ A full-stack AI-powered job application tracker built with Flask (backend) and R
 
 ## Features
 
-- **🔐 User Authentication** — Secure registration, login, and session management with password hashing
+ 
 - **📱 Responsive Design** — Mobile-first UI that works seamlessly on phones, tablets, and desktops
 - **📋 Job Tracker** — Add, update, delete and search job applications
 - **🎯 Resume Matcher** — Match your skills against a job and get a match score
