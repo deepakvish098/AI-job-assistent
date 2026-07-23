@@ -11,8 +11,6 @@ A full-stack AI-powered job application tracker built with Flask (backend) and R
 - **📋 Job Tracker** — Add, update, delete and search job applications
 - **🎯 Resume Matcher** — Match your skills against a job and get a match score
 - **📤 Resume Upload** — Upload a PDF resume and analyze it against a job description
-- **🕷️ Job Scraper** — Scrape real jobs from the web automatically
-- **🔗 API Job Fetcher** — Fetch jobs from RemoteOK API
 - **🤖 Job Recommendations** — Get ranked job recommendations based on your skills using AI similarity matching
 - **📊 Dashboard** — Visual overview of your application status with progress bars
 - **☰ Mobile Sidebar** — Hamburger menu for easy navigation on mobile devices
